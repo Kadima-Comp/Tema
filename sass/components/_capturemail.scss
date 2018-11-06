@@ -1,0 +1,22 @@
+.navemail{
+  z-index: 1;
+  transform: translate(0,-50%);
+  margin: auto;
+  width: 70%;
+  padding: 3rem;
+  text-align: center;
+  background-color: $color-secondary;
+
+  & .capture-email-button{
+    font-size: 2rem;
+
+  }
+  & .capture-email-field{
+    width: 60%;
+    font-size: 2rem;
+  }
+  & h3{
+    text-align: left;
+    margin-bottom: 1rem;
+  }
+}

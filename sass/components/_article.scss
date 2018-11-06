@@ -1,0 +1,29 @@
+.article-main{
+  margin: 0 0 1rem auto;
+  border: solid red 1px;
+  width: 90%;
+      & .thumbnail{
+        width: 100%;
+      }
+      & p{
+        font-size: 1.5rem;
+        font-weight: normal;
+        margin: 0;
+      }
+      & h1{
+        font-size: 3rem;
+        font-weight: 100;
+      }
+      & a{
+        font-size: 1.5rem;
+      }
+      & .category{
+        font-size: 1.3rem;
+      }
+      & .autor-date{
+        font-size: 1.3rem;
+      }
+      & .read-more{
+
+      }
+  }

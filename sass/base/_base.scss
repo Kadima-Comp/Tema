@@ -1,0 +1,21 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  // This defines what 1rem is 10px
+  //rem em %
+  font-size: 62.5%;
+ // overflow-x: hidden;
+}
+
+body {
+  box-sizing: border-box;
+}
+li{
+  list-style: none;
+}

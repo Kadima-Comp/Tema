@@ -1,0 +1,15 @@
+{
+  "name": "kadima-layout",
+  "version": "1.0.0",
+  "description": "Evandro aprendendo os pagode da vida",
+  "main": "index.js",
+  "scripts": {
+    "compile:sass": "node-sass sass/main.scss css/style.css -w"
+  },
+  "author": "Evandro",
+  "license": "ISC",
+  "dependencies": {
+    "live-server": "^1.2.0",
+    "node-sass": "^4.9.4"
+  }
+}

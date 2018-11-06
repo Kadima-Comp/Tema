@@ -1,0 +1,14 @@
+.pages-group{
+  width: 90%;
+  margin: 1rem 0 1rem auto;
+  text-align: center;
+  & a {
+    color: $color-text-black-1;
+    text-decoration: none;
+    padding: 0.75rem 2rem;
+    &:hover{
+      color: $color-text-black-1;
+      text-decoration: none;
+    }
+  }
+}
