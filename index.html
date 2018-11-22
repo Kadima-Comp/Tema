@@ -10,7 +10,7 @@
     </head>
     <body>
         <nav class="navbar navbar-expand-lg navbar-light bg-light">
-            <a class="navbar-brand" href="#">
+            <a class="navbar-brand" href="index.html">
                 <img src="img/icon.png" width="64" height="64" alt="Logo da Kadima">
             </a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
@@ -20,7 +20,7 @@
             <div class="collapse navbar-collapse flex-grow-1 text-right" id="navbarTogglerDemo02"><!-- AJUSTAR ALINHAMENTO EM XS -->
                 <ul class="navbar-nav ml-auto flex-nowrap">
                     <li class="nav-item active">
-                        <a class="nav-link" href="#">Inicio<span class="sr-only">(current)</span></a>
+                        <a class="nav-link" href="index.html">Inicio<span class="sr-only">(current)</span></a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#">Sobre</a>
@@ -58,9 +58,8 @@
             </div>
         </nav>
         <main class="main">
-            <div class="row" style="width: 100%
-            ">
-                <aside class="social social-absolute" id="social-bar">
+            <div class="row" style="width: 100%">
+                <aside class="social social-absolute" id="social-bar"><!-- FADE EM ANDAMENTO -->
                     <ul class="no-margin-padding">
                         <!-- MUDAR OS ICONES, ELES TEM LICENCA -->
                         <li><a href="#"><i class="fab fa-facebook"></i></a></li>
@@ -68,126 +67,127 @@
                         <li><a href="#"><i class="fab fa-twitter"></i></a></li>
                     </ul>
                 </aside>
-            <div class="col-xs-12 col-md-9">
-                <div class="row">
-                    <div class="col-md-12"><!-- AJUSTAR SELEÇÃO DE CATEGORIA -->
-						<article class="article-main">
+				<div id="art" class="col-xs-12 col-md-9">
+					<!-- AQUI CRIA O BOTÃO PARA TIRAR A SELEÇÃO DE CATEGORIA -->
+					<div class="row">
+					
+						<div class="col-md-12" name="">
+							<article class="article-main">
+									<div class="row">
+										<div class="col-md-4">
+												<img class="thumbnail" src="img/imagem-teste-quadrado.jpg">
+										</div>
+										<div class="col-md-8">
+											<a href="#" name="category" onclick="listaCat()">Categoria 1</a><!-- ATUALIZAR 'Categoria 1' COM VARIÁVEL PHP -->
+											<p class="autor-date">Autor: Evandro Machado Pereira | 02 de novembro de 2018</p>
+											<h1>Primeiro Post</h1>
+											<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque debitis eius eos fuga nemo, odit perspiciatis temporibus! Accusamus autem dolore dolorum excepturi expedita fuga maiores natus nesciunt pariatur, quidem, sunt.</p>
+											<a href="pages.html">Leia Mais!</a>
+										</div>
+
+									</div>
+							</article>
+						</div>
+
+
+						<div class="col-md-12" name="">
+							<article class="article-main">
+
 								<div class="row">
 
 									<div class="col-md-4">
-											<img class="thumbnail" src="img/imagem-teste-quadrado.jpg">
+										<img class="thumbnail" src="img/imagem-teste-quadrado.jpg">
 									</div>
 									<div class="col-md-8">
-										<a href="#" class="category">Categoria 1</a>
+										<a href="#" name="category" onclick="listaCat()">Categoria 2</a><!-- ATUALIZAR 'Categoria 2' COM VARIÁVEL PHP -->
 										<p class="autor-date">Autor: Evandro Machado Pereira | 02 de novembro de 2018</p>
-										<h1>Primeiro Post</h1>
+										<h1>Segundo Post</h1>
 										<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque debitis eius eos fuga nemo, odit perspiciatis temporibus! Accusamus autem dolore dolorum excepturi expedita fuga maiores natus nesciunt pariatur, quidem, sunt.</p>
-										<a href="#">Leia Mais!</a>
+										<a href="pages.html">Leia Mais!</a>
 									</div>
 
 								</div>
-						</article>
-                    </div>
+							</article>
+						</div>
 
+						<div class="col-md-12" name="">
+							<article class="article-main">
+								<div class="row">
 
-                        <div class="col-md-12">
-                            <article class="article-main">
+									<div class="col-md-4">
+										<img class="thumbnail" src="img/imagem-teste-quadrado.jpg">
+									</div>
+									<div class="col-md-8">
+										<a href="#" name="category" onclick="listaCat()">Categoria 1</a><!-- ATUALIZAR 'Categoria 1' COM VARIÁVEL PHP -->
+										<p class="autor-date">Autor: Evandro Machado Pereira | 02 de novembro de 2018</p>
+										<h1>Terceiro Post</h1>
+										<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque debitis eius eos fuga nemo, odit perspiciatis temporibus! Accusamus autem dolore dolorum excepturi expedita fuga maiores natus nesciunt pariatur, quidem, sunt.</p>
+										<a class="read-more" href="pages.html">Leia Mais!</a>
+									</div>
 
-                                <div class="row">
+								</div>
+							</article>
+						</div>
 
-                                    <div class="col-md-4">
-                                        <img class="thumbnail" src="img/imagem-teste-quadrado.jpg">
-                                    </div>
-                                    <div class="col-md-8">
-                                        <a href="#" class="category">Categoria 2</a>
-                                        <p class="autor-date">Autor: Evandro Machado Pereira | 02 de novembro de 2018</p>
-                                        <h1>Segundo Post</h1>
-                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque debitis eius eos fuga nemo, odit perspiciatis temporibus! Accusamus autem dolore dolorum excepturi expedita fuga maiores natus nesciunt pariatur, quidem, sunt.</p>
-                                        <a href="#">Leia Mais!</a>
-                                    </div>
-
-                                </div>
-                            </article>
-                        </div>
-
-                        <div class="col-md-12">
-                            <article class="article-main">
-                                <div class="row">
-
-                                    <div class="col-md-4">
-                                        <img class="thumbnail" src="img/imagem-teste-quadrado.jpg">
-                                    </div>
-                                    <div class="col-md-8">
-                                        <a href="#" class="category">Categoria 1</a>
-                                        <p class="autor-date">Autor: Evandro Machado Pereira | 02 de novembro de 2018</p>
-                                        <h1>Terceiro Post</h1>
-                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque debitis eius eos fuga nemo, odit perspiciatis temporibus! Accusamus autem dolore dolorum excepturi expedita fuga maiores natus nesciunt pariatur, quidem, sunt.</p>
-                                        <a class="read-more" href="#">Leia Mais!</a>
-                                    </div>
-
-                                </div>
-                            </article>
-                        </div>
-
-                    <nav aria-label="..." class="pages-group">
-                        <ul class="pagination justify-content-center">
-                            <li class="page-item">
-                                <a class="page-link" href="#" aria-label="Previous">
-                                    <span aria-hidden="true">&laquo;</span>
-                                    <span class="sr-only">Previous</span>
-                                </a>
-                            </li>
-                            <li class="page-item active">
-                                <a class="page-link" href="#">1<span class="sr-only">(current)</span></a></li>
-                            <li class="page-item"><a class="page-link" href="#">2 </a>
-                            </li>
-                            <li class="page-item"><a class="page-link" href="#">3</a></li>
-                            <li class="page-item">
-                                <a class="page-link" href="#" aria-label="Next">
-                                    <span aria-hidden="true">&raquo;</span>
-                                    <span class="sr-only">Next</span>
-                                </a>
-                            </li>
-                        </ul>
-                    </nav>
-
-                </div>
-            </div>
-            <div class="container col-xs-12 col-md-3"><!-- AJUSTAR NO TAMANHO XS -->
-				<div class="row">
-					<aside class="sidebar">
-						<h3>Widgets</h3>
-
-						<section class="section">
-							<h4>Lista de Itens</h4>
-							<ul>
-								<li>Item 1</li>
-								<li>Item 2</li>
-								<li>Item 3</li>
+						<nav aria-label="..." class="pages-group">
+							<ul class="pagination justify-content-center">
+								<li class="page-item">
+									<a class="page-link" href="#" aria-label="Previous">
+										<span aria-hidden="true">&laquo;</span>
+										<span class="sr-only">Previous</span>
+									</a>
+								</li>
+								<li class="page-item active">
+									<a class="page-link" href="#">1<span class="sr-only">(current)</span></a></li>
+								<li class="page-item"><a class="page-link" href="#">2 </a>
+								</li>
+								<li class="page-item"><a class="page-link" href="#">3</a></li>
+								<li class="page-item">
+									<a class="page-link" href="#" aria-label="Next">
+										<span aria-hidden="true">&raquo;</span>
+										<span class="sr-only">Next</span>
+									</a>
+								</li>
 							</ul>
-						</section>
+						</nav>
 
-						<section class="section">
-							<h4>Area com imagem</h4>
-							<img src="img/imagem-teste-retangulo.jpg"/>
+					</div>
+				</div>
+				<div class="col-xs-12 col-md-3"><!-- AJUSTAR NO TAMANHO XS -->
+					<div class="row container">
+						<aside class="sidebar">
+							<h3>Widgets</h3>
 
-						</section>
-						
-						<div class="row align-items-center">
-							<div class="container d-none d-md-block col-md-12"><!-- DESAPARECE EM GRID MENOR QUE MD -->
-								<h4>Se cadastre e fique por dentro das novidades!</h4>
-								<div class="input-group mb-3">
-									<input type="text" class="capture-email-field form-control" placeholder="E-mail" aria-label="E-mail do usuario" aria-describedby="basic-addon2">
-									<div class="input-group-append">
-										<button class="capture-email-button btn btn-secondary" type="submit">Enviar</button>
+							<section class="section">
+								<h4>Lista de Itens</h4>
+								<ul>
+									<li>Item 1</li>
+									<li>Item 2</li>
+									<li>Item 3</li>
+								</ul>
+							</section>
+
+							<section class="section">
+								<h4>Area com imagem</h4>
+								<img src="img/imagem-teste-retangulo.jpg"/>
+
+							</section>
+							
+							<div class="row align-items-center">
+								<div class="container d-none d-md-block col-md-12"><!-- DESAPARECE EM GRID MENOR QUE MD -->
+									<h4>Se cadastre e fique por dentro das novidades!</h4>
+									<div class="input-group mb-3">
+										<input type="text" class="capture-email-field form-control" placeholder="E-mail" aria-label="E-mail do usuario" aria-describedby="basic-addon2">
+										<div class="input-group-append">
+											<button class="capture-email-button btn btn-secondary" type="submit">Enviar</button>
+										</div>
 									</div>
 								</div>
 							</div>
-						</div>
 
-					</aside>
+						</aside>
+					</div>
 				</div>
-            </div>
             </div>
         </main>
 		
@@ -292,15 +292,35 @@
             }
             }
 			
-			function cat(){
-				document.getElementByClass("category")addEventListener("onclick", function(){
-					
-					alert("Hello Word!");
-					
-				})
+			
+			//boolean catAtivado = false; USAR NA TROCA DE CATEGORIAS - VARIÁVEL GLOBAL
+			function listaCat(){// LISTA CATEGORIAS
+				var el = document.getElementsByName("category"); // Guarda todos os elementos no vetor 'el'.
+				console.log(el); // Mostra no DevTools o vetor.
 				
+				for (var i = 0; i < el.length; i++){ // Percorre os elementos do vetor pelo seu tamanho.
+					console.log(el[i].innerText == "Categoria 1"); // Mostra no DevTools os elementos que não sairão da tela. ATUALIZAR 'Categoria 1' COM VARIÁVEL PHP
+					if (el[i].innerText != "Categoria 1"){ // Procura pelo nome os elementos que irão desaparecer. ATUALIZAR 'Categoria 1' COM VARIÁVEL PHP
+						console.log(el[i].closest("div[name]")); // Mostra no DevTools a div 'pai de todas' que irá deixar de aparecer.
+						el[i].closest("div[name]").style.display="none"; // Faz as divs dos elementos filtrados desaparecerem.
+					}
+				}
+				
+				
+				//var div = document.createElement("DIV");
+				//var row = document.createElement("ROW");
+				//var btn = document.createElement("BUTTON");
+				//console.log(div);
+				//console.log(row);
+				//console.log(btn);
+				//document.body.appendChild(div);
+				//div.appendChild(row);
+				//row.appendChild(btn);
 				
 			}
+				
+				
+			
 			
         </script>
     </body>
