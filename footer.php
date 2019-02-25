@@ -1,4 +1,6 @@
-<footer class="page-footer"><!-- MUDAR A COR DE FUNDO DO FOOTER NO CSS -->
+
+<?php if(is_active_sidebar('footer-1')): ?>
+<footer class="page-footer">
     <div class="glass">
         <div class="container-fluid">
             <div class="row">
@@ -19,66 +21,20 @@
             </div>
             <div class="container text-left">
                 <div class="row">
-                    <div class="col-md-3 mx-auto">
-                        <h5 class="text-uppercase titulo-footer">Sobre Nós</h5>
-                        <p class="text-footer">Kadima</p>
-                        <p class="text-footer">Rua 1</p>
-                        <p class="text-footer">Nosso número +55 (48) 99999-9999</p>
-                    </div>
-                    <hr class="clearfix w-100 d-md-none">
-                    <div class="col-md-3 mx-auto">
-                        <h5 class="text-uppercase titulo-footer">Últimas Atualizações</h5>
-                        <ul class="list-unstyled">
-                            <li>
-                                <a href="#!" class="text-footer">Primeiro Post</a>
-                            </li>
-                            <li>
-                                <a href="#!" class="text-footer">Segundo Post</a>
-                            </li>
-                            <li>
-                                <a href="#!" class="text-footer">Terceiro Post</a>
-                            </li>
-                        </ul>
-                    </div>
-                    <hr class="clearfix w-100 d-md-none">
-                    <div class="col-md-3 mx-auto">
-                        <h5 class="text-uppercase titulo-footer">Você está seguindo este blog</h5>
-                        <p class="text-footer">Conheça nosso trabalho, clique <a href="#!" class="text-footer">aqui</a>.</p>
-                    </div>
-                    <hr class="clearfix w-100 d-md-none">
-
-                    <div class="col-md-3 mx-auto">
-                        <h5 class="text-uppercase titulo-footer">Social</h5>
-                        <ul>
-                            <li>
-                                <img src="img/imagem-teste-retangulo.jpg" width="12%" height="5%"/>
-                                <a href="#!" class="text-footer">Facebook</a>
-                            </li>
-                            <li>
-                                <img src="img/imagem-teste-retangulo.jpg" width="12%" height="5%"/>
-                                <a href="#!" class="text-footer">Instagram</a>
-                            </li>
-                            <li>
-                                <img src="img/imagem-teste-retangulo.jpg" width="12%" height="5%"/>
-                                <a href="#!" class="text-footer">Twitter</a>
-                            </li>
-                            <li>
-                                <img src="img/imagem-teste-retangulo.jpg" width="12%" height="5%"/>
-                                <a href="#!" class="text-footer">Linkedin</a>
-                            </li>
-                        </ul>
-                    </div>
+    <?php dynamic_sidebar( 'footer-1' )?>
+                </div>
                 </div>
             </div>
-            <div class="container">
-                <hr class="clearfix w-100">
-            </div>
-            <div class="footer-copyright text-center titulo-footer"><p style="margin: 0">© 2018 Kadima. Todos os direitos reservados.</p>
-            </div>
         </div>
+
+    <div class="footer-copyright text-center titulo-footer">
+        <p style="margin: 0">
+            © 2019 <?php bloginfo($show = 'name'); ?> - Todos os direitos reservados.
+        </p>
     </div>
-</footer>
-<!-- FOOTER's END -->
+    </footer>
+<?php endif; ?>
+<?php wp_footer(); ?>
 
 <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>

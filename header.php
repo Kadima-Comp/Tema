@@ -11,6 +11,7 @@
 
 </head>
 <body>
+<!--
 <nav class="navbar navbar-expand-lg navbar-light bg-light">
     <a class="navbar-brand" href="index.html">
         <img src="<?=$home ?>/img/icon.png" width="64" height="64" alt="Logo da Kadima">
@@ -19,7 +20,7 @@
         <span class="navbar-toggler-icon"></span>
     </button>
 
-    <div class="collapse navbar-collapse flex-grow-1 text-right" id="navbarTogglerDemo02"><!-- AJUSTAR ALINHAMENTO EM XS -->
+    <div class="collapse navbar-collapse flex-grow-1 text-right" id="navbarTogglerDemo02"><!-- AJUSTAR ALINHAMENTO EM XS ->
         <ul class="navbar-nav ml-auto flex-nowrap">
             <li class="nav-item active">
                 <a class="nav-link" href="index.html">Inicio<span class="sr-only">(current)</span></a>
@@ -43,19 +44,6 @@
         </form>
     </div>
 </nav>
-<header class="header">
-    <div class="container-fluid"><!-- IMG GRATUITA -->
-        <h1><!--<img src="img/seta.png" height="12%"/>-->Kadima Jr </h1><h2>Seu negócio nas alturas!</h2>
-    </div>
-</header>
-<nav class="navemail"><!-- AJUSTAR POSICIONAMENTO EM XS -->
-    <div class="container">
-        <h3>Se cadastre e fique por dentro das novidades!</h3>
-        <div class="input-group mb-3">
-            <input type="text" class="capture-email-field form-control" placeholder="E-mail" aria-label="E-mail do usuario" aria-describedby="basic-addon2">
-            <div class="input-group-append">
-                <button class="capture-email-button btn btn-secondary" type="submit">Enviar</button>
-            </div>
-        </div>
-    </div>
-</nav>
+-->
+<?php wp_nav_menu( array( 'theme_location' => 'header-menu', 'container_class' => 'navbar navbar-expand-lg navbar-light bg-light') ); ?>
+

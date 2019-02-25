@@ -1,16 +1,35 @@
 <?php get_header(); ?>
 <?php $home = get_template_directory_uri(); ?>
-
+<header class="header">
+    <div class="container-fluid"><!-- IMG GRATUITA -->
+        <h1><!--<img src="img/seta.png" height="12%"/>--><?php bloginfo($show = 'name'); ?></h1><h2><?php bloginfo($show = 'description'); ?></h2>
+    </div>
+</header>
+<nav class="navemail"><!-- AJUSTAR POSICIONAMENTO EM XS -->
+    <div class="container">
+        <h3>Se cadastre e fique por dentro das novidades!</h3>
+        <div class="input-group mb-3">
+            <input type="text" class="capture-email-field form-control" placeholder="E-mail" aria-label="E-mail do usuario" aria-describedby="basic-addon2">
+            <div class="input-group-append">
+                <button class="capture-email-button btn btn-secondary" type="submit">Enviar</button>
+            </div>
+        </div>
+    </div>
+</nav>
 <main class="main">
     <div class="row" style="width: 100%">
+
+        <?php if(is_active_sidebar('sidebar-2')): ?>
         <aside class="social social-absolute" id="social-bar"><!-- FADE EM ANDAMENTO -->
             <ul class="no-margin-padding">
-                <!-- MUDAR OS ICONES, ELES TEM LICENCA -->
-                <li><a href="#"><i class="fab fa-facebook"></i></a></li>
-                <li><a href="#"><i class="fab fa-instagram"></i></a></li>
-                <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+        <?php dynamic_sidebar( 'sidebar-2' )?>
             </ul>
         </aside>
+        <?php endif; ?>
+
+
+
+
         <div id="art" class="col-xs-12 col-md-9">
             <!-- AQUI CRIA O BOTÃO PARA TIRAR A SELEÇÃO DE CATEGORIA -->
             <div class="row">
@@ -35,7 +54,7 @@
                                 <p class="autor-date">Autor: <?php the_author(); ?> | <?php the_time('d') ?> de <?php the_time('F') ?> de <?php the_time('Y') ?>, às <?php the_time() ?></p>
                                 <h1><?php the_title();?></h1>
                                 <p><?php the_content();?></p>
-                                <a href="pages.html">Leia Mais!</a>
+                                <a href="<?php the_permalink(); ?>">Leia Mais...</a>
                             </div>
 
                         </div>
@@ -82,22 +101,12 @@
         <div class="col-xs-12 col-md-3"><!-- AJUSTAR NO TAMANHO XS -->
             <div class="row container">
                 <aside class="sidebar">
-                    <h3>Widgets</h3>
 
-                    <section class="section">
-                        <h4>Lista de Itens</h4>
-                        <ul>
-                            <li>Item 1</li>
-                            <li>Item 2</li>
-                            <li>Item 3</li>
-                        </ul>
-                    </section>
+                    <!-- Widget -->
+                    <?php if(is_active_sidebar('sidebar-1')): ?>
+                    <?php dynamic_sidebar( 'sidebar-1' )?>
+                    <?php endif; ?>
 
-                    <section class="section">
-                        <h4>Area com imagem</h4>
-                        <img src="img/imagem-teste-retangulo.jpg"/>
-
-                    </section>
 
                     <div class="row align-items-center">
                         <div class="container d-none d-md-block col-md-12"><!-- DESAPARECE EM GRID MENOR QUE MD -->
