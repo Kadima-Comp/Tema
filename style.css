@@ -48,10 +48,14 @@ h5 {
 
 header {
     padding: 9% 6%;
-    background-color: rgba(140, 140, 140, .2);
+    background-color: #6200ee;
 }
 
-.headerpages{
+header h1, header h2 {
+    color: #fff;
+}
+
+.headerpages {
     padding: 0%;
 }
 
@@ -59,33 +63,16 @@ header {
     font-size: 2.5rem;
 }
 
-.navbar input, .btn {
+.navbar input,
+.btn {
     font-size: 1.5rem;
 }
 
 .article-main {
     margin: 0 0 1rem auto;
-    border: solid red 1px;
     width: 90%;
 }
-.article-main .thumbnail {
-    width: 100%;
-}
-.article-main p {
-    font-size: 1.5rem;
-    font-weight: normal;
-    margin: 0;
-}
-.article-main h1 {
-    font-size: 3rem;
-    font-weight: 100;
-}
-.article-main a {
-    font-size: 1.5rem;
-}
-.article-main .category {
-    font-size: 1.3rem;
-}
+
 .article-main .autor-date {
     font-size: 1.3rem;
 }
@@ -94,30 +81,27 @@ header {
     z-index: 1;
     transform: translate(0, -50%);
     margin: auto;
-    width: 70%;
-    padding: 3rem;
     text-align: center;
-    background-color: #f2f4e9;
+    background-color: #f9f9f9;
+    padding: 5px 10px;
 }
-.navemail .capture-email-button {
-    font-size: 2rem;
-}
-.navemail .capture-email-field {
-    width: 60%;
-    font-size: 2rem;
-}
+
 .navemail h3 {
     text-align: left;
-    margin-bottom: 1rem;
+    margin-bottom: 10px;
+    font-size: 20px;
+}
+
+.navemail input{
+   font-size: 15px;
+}
+
+.navemail .capture-email-button {
+    font-size: 16px;
 }
 
 .sidebar img {
     width: 100%;
-}
-
-.sidebar section {
-    border: solid green 1px;
-    margin-bottom: 1rem;
 }
 
 .pages-group {
@@ -125,11 +109,13 @@ header {
     margin: 1rem 0 1rem auto;
     text-align: center;
 }
+
 .pages-group a {
     color: #212529;
     text-decoration: none;
     padding: 0.75rem 2rem;
 }
+
 .pages-group a:hover {
     color: #212529;
     text-decoration: none;
@@ -141,12 +127,14 @@ header {
     left: 0;
     padding: 1rem;
     text-align: center;
-    max-width:10rem;
+    max-width: 10rem;
 }
+
 .social .no-margin-padding {
     margin: 0;
     padding: 0;
 }
+
 .social i {
     font-size: 3rem;
     color: #212529;
@@ -188,19 +176,23 @@ hr {
     color: rgba(220, 220, 220, 0.3);
 }
 
-.footer-copyright{
-    margin: 0%;}
+.footer-copyright {
+    margin: 0%;
+}
 
-.page-link{
+.page-link {
     display: inline-block;
 }
-.paginacao-main .current li{
-        border: 1px solid black;
+
+.paginacao-main .current li {
+    border: 1px solid black;
 }
-.paginacao-main a{
+
+.paginacao-main a {
     padding-right: 10px;
     padding-left: 10px;
 }
+
 .parallax {
     /* The image used */
     /* Full height */
@@ -211,6 +203,19 @@ hr {
     background-repeat: no-repeat;
     background-size: cover;
 }
-.widget-title h2{
+
+.widget-title h2 {
     font-size: 6rem;
+}
+
+.elevation {
+    -webkit-box-shadow: 0 5px 10px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+  -moz-box-shadow: 0 5px 10px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+  -ms-box-shadow: 0 5px 10px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+  -o-box-shadow: 0 5px 10px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+}
+
+.main {
+    padding: 30px;
 }
