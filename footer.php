@@ -27,7 +27,7 @@
             </div>
         </div>
 
-    <div class="footer-copyright text-center titulo-footer">
+    <div class="footer-copyright text-center">
         <p style="margin: 0">
             © 2019 <?php bloginfo($show = 'name'); ?> - Todos os direitos reservados.
         </p>

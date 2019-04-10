@@ -11,7 +11,9 @@
             'menu_id'        => 'primary-menu',
             'container'      => false,
             'depth'          => 2,
-            'container_class' => 'nav'
+            'menu_class' => 'navbar-nav mr-auto',
+            'fallback_cb' => 'WP_Bootstrap_Navwalker::fallback',
+            'walker' => new WP_Bootstrap_Navwalker(),
         ) );
         ?>
     </div>

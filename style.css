@@ -6,6 +6,10 @@
     box-sizing: inherit;
 }
 
+
+body.nojq #branding-wrap{top: 28px;} 
+body.nojq #wrapper{margin-top: 145px;}
+
 html {
     font-size: 62.5%;
 }
@@ -153,7 +157,7 @@ header h1, header h2 {
 }
 
 .page-footer {
-    background-color: rgb(0, 0, 0);
+    background-color: #c9c7ce;
 }
 
 .glass {
@@ -161,7 +165,7 @@ header h1, header h2 {
 }
 
 .titulo-footer {
-    color: rgb(248, 248, 248);
+    color: #212529;
 }
 
 .text-footer {
@@ -177,7 +181,10 @@ hr {
 }
 
 .footer-copyright {
-    margin: 0%;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    background-color: #212530;
+    color: #c9c7ce;
 }
 
 .page-link {

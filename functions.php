@@ -1,5 +1,9 @@
 <?php
 
+// Register Custom Navigation Walker
+require_once 'class-wp-bootstrap-navwalker.php';
+
+
 add_theme_support('post-thumbnails');
 function register_my_menu() {
     register_nav_menu('header-menu',__( 'Header Menu' ));
